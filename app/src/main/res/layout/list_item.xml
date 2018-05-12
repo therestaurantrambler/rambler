@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="88dp">
+
+
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="88dp"
+    android:layout_weight="1"
+    android:src ="@drawable/wine_glass"
+    android:padding="16dp"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="88dp"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:label="@+id/textContainer">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="88dp"
+            android:layout_weight="1"
+            android:text="Restaurant"
+            android:label="@+id/restaurantName"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="88dp"
+            android:layout_weight="1"
+            android:text="Address"
+            android:label="@+id/address"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="88dp"
+            android:layout_weight="1"
+            android:text="Specials"
+            android:label="@+id/specials"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="88dp"
+    android:layout_weight="1"
+    android:label="@+id/invite"
+    android:text="Invite"
+    android:padding="16dp" />
+
+
+
+</LinearLayout>
