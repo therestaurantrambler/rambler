@@ -19,8 +19,8 @@ This sample uses the Gradle build system. To build this project, use the
 
 Future Work
 -----------
-1. Create Weekend Submenu
+1. Create Weekend Submenu.
 2. Change daily activities to framents.
-3. Allow user to choose day and drink
+3. Allow user to choose day and drink.
 4. Create that listing.
-5. Create and wire up a database
+5. Create and wire up a database.
