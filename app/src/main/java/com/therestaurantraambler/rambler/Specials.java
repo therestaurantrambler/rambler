@@ -4,9 +4,11 @@ package com.therestaurantraambler.rambler;
  * Created by Becca on 4/15/2018.
  */
 
+
+//Create the class
 public class Specials {
 
-    //declare private variables excluding images.
+    //declare private member variables excluding images.
     private String mRestaurantName;
     private String mAddress;
     private String mSpecials;
@@ -19,7 +21,12 @@ public class Specials {
     private static final int NO_IMAGE_PROVIDED = -1;
 
 
-    //create the Specials object
+    //create the Specials object (Constructor)
+    //@mImageResourceId is the image of the restaurant
+    //@mAddress is the physical address of the restaurant
+    //@mSpecials is the special offered by the restuarant
+    //@mInviteButtonResouceId is the Invite button. It is the same for every item.
+    //Intitalize the global mVariables to the value that is passed in
     public Specials (int imageResourceId, String restaurantName, String address,
                      String specials, int inviteButtonResourceId){
 

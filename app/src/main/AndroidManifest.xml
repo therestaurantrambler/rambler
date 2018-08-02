@@ -100,16 +100,43 @@
 
         <activity
             android:name=".MondayCocktails"
-            android:label="Cocktails-Monday"/>
+            android:label="Cocktails-Monday"
+            android:parentActivityName=".MondayActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MondayActivity"/>
+        </activity>
+
         <activity
             android:name=".MondayWine"
-            android:label="Wine-Monday" />
+            android:label="Wine-Monday"
+            android:parentActivityName=".MondayActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MondayActivity"/>
+        </activity>
+
         <activity
             android:name=".MondayAppetizers"
-            android:label="Appetizers-Monday" />
+            android:label="Appetizers-Monday"
+            android:parentActivityName=".MondayActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MondayActivity"/>
+        </activity>
+
         <activity
             android:name=".MondayCoffee"
-            android:label="Coffee-Monday"></activity>
+            android:label="Coffee-Monday"
+            android:parentActivityName=".MondayActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MondayActivity"/>
+        </activity>
 
     </application>
 
