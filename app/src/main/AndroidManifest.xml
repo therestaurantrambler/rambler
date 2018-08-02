@@ -18,28 +18,86 @@
         </activity>
     <activity
             android:name=".MondayActivity"
-            android:label="Monday" />
+            android:label="Monday"
+            android:parentActivityName=".MainActivity">
+        <!-- Parent activity meta-data to support 4.0 and lower -->
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity"/>
+    </activity>
+
+
         <activity
             android:name=".TuesdayActivity"
-            android:label="Tuesday" />
+            android:label="Tuesday"
+            android:parentActivityName=".MainActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+
         <activity
             android:name=".WednesdayActivity"
-            android:label="Wednesday" />
+            android:label="Wednesday"
+            android:parentActivityName=".MainActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+
+
         <activity
             android:name=".ThursdayActivity"
-            android:label="Thursday" />
+            android:label="Thursday"
+            android:parentActivityName=".MainActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+
         <activity
             android:name=".FridayActivity"
-            android:label="Friday"/>
+            android:label="Friday"
+            android:parentActivityName=".MainActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+
         <activity
             android:name=".SaturdayActivity"
-            android:label="Saturday" />
+            android:label="Saturday"
+            android:parentActivityName=".MainActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+
         <activity
             android:name=".SundayActivity"
-            android:label="Sunday" />
+            android:label="Sunday"
+            android:parentActivityName=".MainActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+
         <activity
             android:name=".MondayBeer"
-            android:label="Beer-Monday"/>
+            android:label="Beer-Monday"
+            android:parentActivityName=".MondayActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MondayActivity"/>
+        </activity>
+
         <activity
             android:name=".MondayCocktails"
             android:label="Cocktails-Monday"/>
