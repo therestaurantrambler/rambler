@@ -61,16 +61,22 @@ public class SpecialsAdapter extends ArrayAdapter<Specials> {
         restaurantNameTextView.setText(currentSpecials.getRestaurantName());
 
         // Find the address TextView in the list_item.xml layout
-        TextView addressTextView = (TextView) listItemView.findViewById(R.id.address_text_view);
+        TextView phoneTextView = (TextView) listItemView.findViewById(R.id.phone_text_view);
         // Get the version number from the current AndroidFlavor object and
         // set this text on the number TextView
-        addressTextView.setText(currentSpecials.getAddress());
+        phoneTextView.setText(currentSpecials.getPhone());
 
         // Find the specials TextView in the list_item.xml layout
         TextView specialsTextView = (TextView) listItemView.findViewById(R.id.specials_text_view);
         // Get the version number from the current AndroidFlavor object and
         // set this text on the number TextView
         specialsTextView.setText(currentSpecials.getSpecials());
+
+        // Find the map TextView in the list_item.xml layout
+        TextView mapTextView = (TextView) listItemView.findViewById(R.id.map_text_view);
+        // Get the version number from the current AndroidFlavor object and
+        // set this text on the number TextView
+        mapTextView.setText(currentSpecials.getMap());
 
 
         // Find the ImageView in the list_item.xml layout with the ID list_item_icon

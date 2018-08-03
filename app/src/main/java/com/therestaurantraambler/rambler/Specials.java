@@ -10,8 +10,9 @@ public class Specials {
 
     //declare private member variables excluding images.
     private String mRestaurantName;
-    private String mAddress;
+    private String mPhone;
     private String mSpecials;
+    private String mMap;
     private int mInviteButtonResourceId;
 
     // declare the private variable for the image. Initialize to a number that is outside range
@@ -27,13 +28,14 @@ public class Specials {
     //@mSpecials is the special offered by the restuarant
     //@mInviteButtonResouceId is the Invite button. It is the same for every item.
     //Intitalize the global mVariables to the value that is passed in
-    public Specials (int imageResourceId, String restaurantName, String address,
-                     String specials, int inviteButtonResourceId){
+    public Specials (int imageResourceId, String restaurantName, String phone,
+                     String specials, int inviteButtonResourceId, String map){
 
         mImageResourceId = imageResourceId;
         mRestaurantName = restaurantName;
-        mAddress = address;
+        mPhone = phone;
         mSpecials = specials;
+        mMap = map;
         mInviteButtonResourceId = inviteButtonResourceId;
 
     }
@@ -42,8 +44,9 @@ public class Specials {
 
     public int getImageResourceId() {return mImageResourceId;}
     public String getRestaurantName() {return mRestaurantName;}
-    public String getAddress(){return mAddress;}
+    public String getPhone(){return mPhone;}
     public String getSpecials(){return mSpecials;}
+    public String getMap(){return mMap;}
     public int getInviteButtonResourceId(){return mInviteButtonResourceId;}
     public boolean hasImage(){
         return mImageResourceId != NO_IMAGE_PROVIDED;
