@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Rambler.iml" filepath="$PROJECT_DIR$/Rambler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RamblerFragments.iml" filepath="$PROJECT_DIR$/RamblerFragments.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
