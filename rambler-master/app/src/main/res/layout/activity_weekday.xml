@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.therestaurantraambler.rambler.MondayActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/monday"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wine"
+        android:id="@+id/wine_weekday"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor= "#000000"
+        android:layout_weight= "1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Beer"
+        android:id="@+id/beer_weekday"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor= "#000000"
+        android:layout_weight= "1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Appetizers"
+        android:id="@+id/appetizer_weekday"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor= "#000000"
+        android:layout_weight= "1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cocktails"
+        android:id="@+id/cocktails_weekday"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor= "#000000"
+        android:layout_weight= "1" />
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Coffee"
+        android:id="@+id/coffee_weekday"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor= "#000000"
+        android:layout_weight= "1" />
+
+
+
+</LinearLayout>

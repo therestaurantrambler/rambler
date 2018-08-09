@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Rambler</string>
+    <string name="title_activity_monday_wine">MondayWine</string>
+    <string name="Monday">Monday</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
