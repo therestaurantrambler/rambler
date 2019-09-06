@@ -3,11 +3,11 @@ package com.therestaurantraambler.rambler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class FridayActivity extends AppCompatActivity {
+public class BrunchActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_friday);
+        setContentView(R.layout.activity_brunch);
     }
 }

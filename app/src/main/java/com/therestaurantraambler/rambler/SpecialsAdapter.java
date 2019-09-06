@@ -24,6 +24,8 @@ import java.util.ArrayList;
 
 public class SpecialsAdapter extends ArrayAdapter<Specials> {
 
+
+
     public SpecialsAdapter(Context context, ArrayList<Specials> specials) {
 
         super(context, 0, specials);

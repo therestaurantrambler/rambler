@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        //Find the view that shows the Tuesday catergory.
+        //Find the view that shows the Tuesday category.
 
         TextView tuesday = (TextView) findViewById(R.id.tuesday);
 
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        //Find the view that shows the Wednesday catergory.
+        //Find the view that shows the Wednesday category.
 
         TextView wednesday = (TextView) findViewById(R.id.wednesday);
 
@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        //Find the view that shows the Thursday catergory.
+        //Find the view that shows the Thursday category.
 
         TextView thursday = (TextView) findViewById(R.id.thursday);
 
@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        //Find the view that shows the Friday catergory.
+        //Find the view that shows the Friday category.
 
         TextView friday = (TextView) findViewById(R.id.friday);
 
@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        //Find the view that shows the Saturday catergory.
+        //Find the view that shows the Saturday category.
 
         TextView saturday = (TextView) findViewById(R.id.saturday);
 
@@ -117,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        //Find the view that shows the Sunday catergory.
+        //Find the view that shows the Sunday category.
 
         TextView sunday = (TextView) findViewById(R.id.sunday);
 
@@ -130,6 +130,22 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent sundayIntent = new Intent(MainActivity.this, SundayActivity.class);
                 startActivity(sundayIntent);
+            }
+        });
+
+        //Find the view that shows the Brunch category.
+
+        TextView brunch = (TextView) findViewById(R.id.brunch);
+
+        // Set the onClickListener to that view.
+        brunch.setOnClickListener(new View.OnClickListener()
+
+        {
+            // This method will execute when the Sunday button is pressed.
+            @Override
+            public void onClick(View view) {
+                Intent brunchIntent = new Intent(MainActivity.this, BrunchActivity.class);
+                startActivity(brunchIntent);
             }
         });
 

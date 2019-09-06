@@ -11,7 +11,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/monday"
+        android:src="@drawable/wine_glass"
         android:layout_weight="1"/>
 
     <TextView
@@ -53,20 +53,6 @@
         android:gravity="center"
         android:textColor= "#000000"
         android:layout_weight= "1" />
-
-
-
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Coffee"
-        android:id="@+id/coffee_weekday"
-        android:textSize="16sp"
-        android:gravity="center"
-        android:textColor= "#000000"
-        android:layout_weight= "1" />
-
 
 
 </LinearLayout>
