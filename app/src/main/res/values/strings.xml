@@ -2,7 +2,16 @@
     <string name="app_name">Rambler</string>
     <string name="title_activity_monday_wine">MondayWine</string>
     <string name="Monday">Monday</string>
+    <string name="Tuesday">Tuesday</string>
+    <string name="Wednesday">Wednesday</string>
+    <string name="Thursday">Thursday</string>
+    <string name="Friday">Friday</string>
+    <string name="Saturday">Saturday</string>
+    <string name="Sunday">Sunday</string>
+    <string name="Brunch">Brunch</string>
+    <string name="Trivia">Trivia</string>
+    <string name="Reward">Reward Programs</string>
+    <string name="nearMe">Specials Happening Now Near Me</string>
+    <string name="title_activity_maps">Map from Main Menu</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

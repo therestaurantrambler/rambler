@@ -133,6 +133,23 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+        //Find the view that shows the Trivia category.
+
+        TextView trivia = (TextView) findViewById(R.id.trivia);
+
+        // Set the onClickListener to that view.
+        trivia.setOnClickListener(new View.OnClickListener()
+
+        {
+            // This method will execute when the Sunday button is pressed.
+            @Override
+            public void onClick(View view) {
+                Intent triviaIntent = new Intent(MainActivity.this, TriviaActivity.class);
+                startActivity(triviaIntent);
+            }
+        });
+
         //Find the view that shows the Brunch category.
 
         TextView brunch = (TextView) findViewById(R.id.brunch);
@@ -148,6 +165,40 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(brunchIntent);
             }
         });
+
+//Find the view that shows the Reward category.
+
+        TextView reward = (TextView) findViewById(R.id.reward);
+
+        // Set the onClickListener to that view.
+        reward.setOnClickListener(new View.OnClickListener()
+
+        {
+            // This method will execute when the Rewards Program button is pressed.
+            @Override
+            public void onClick(View view) {
+                Intent rewardIntent = new Intent(MainActivity.this, RewardActivity.class);
+                startActivity(rewardIntent);
+            }
+        });
+
+
+
+        //Find the view that shows the Find Specials Near Me category.
+
+        TextView nearMeMap = (TextView) findViewById(R.id.nearMe);
+
+        // Set the onClickListener to that view.
+        nearMeMap.setOnClickListener(new View.OnClickListener() {
+            // This method will execute when the Find Specials Near Me button is pressed.
+            @Override
+            public void onClick(View view) {
+                Intent nearMeMapIntent = new Intent(MainActivity.this, MapsActivity.class);
+                startActivity(nearMeMapIntent);
+            }
+        });
+
+
 
     }
 }

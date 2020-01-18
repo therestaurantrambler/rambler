@@ -3,4 +3,5 @@
 
     <!-- Height of each list item -->
     <dimen name="list_item_height">88dp</dimen>
+    <dimen name="list_reward_height">264dp</dimen>
 </resources>

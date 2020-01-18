@@ -1,103 +1,148 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#78909c"
+    android:drawSelectorOnTop="true"
     tools:context="com.therestaurantraambler.rambler.MainActivity">
 
     <ImageView
+        android:id="@+id/mainMenuImage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/dirtymartinismall"
-        android:layout_weight="1"/>
+        android:src="@drawable/rambler480" />
+
+    <GridLayout
+        android:id="@+id/mainMenuGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:columnCount="2"
+        android:drawSelectorOnTop="true"  >
+
+
+        <TextView
+            android:id="@+id/monday"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/Monday"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/friday"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/Friday"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/tuesday"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/Tuesday"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/saturday"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/Saturday"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/wednesday"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/Wednesday"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/sunday"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/Sunday"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/thursday"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/Thursday"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/trivia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="@string/Trivia"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+    </GridLayout>
 
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/monday"
-        android:text="@string/Monday"
-        android:textSize="16sp"
-        android:gravity="center"
-        android:textColor= "#000000"
-        android:layout_weight= "1" />
+    android:id="@+id/brunch"
+    android:layout_height="wrap_content"
+    android:layout_width ="wrap_content"
+    android:layout_weight="1"
+    android:layout_gravity="center_horizontal"
+    android:text="@string/Brunch"
+    android:textColor="#000000"
+    android:textSize="18sp"
+    android:drawSelectorOnTop="true"  />
 
+    <TextView
+        android:id="@+id/reward"
+        android:layout_height="wrap_content"
+        android:layout_width ="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/Reward"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:drawSelectorOnTop="true"  />
 
 
     <TextView
-        android:layout_width="match_parent"
+        android:id="@+id/nearMe"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tuesday"
-        android:id="@+id/tuesday"
-        android:gravity="center"
-        android:textSize="16sp"
-        android:textColor= "#000000"
-        android:layout_weight= "1" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Wednesday"
-        android:id="@+id/wednesday"
-        android:gravity="center"
-        android:textSize="16sp"
-        android:textColor= "#000000"
-        android:layout_weight= "1" />
-
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Thursday"
-        android:id="@+id/thursday"
-        android:gravity="center"
-        android:textSize="16sp"
-        android:textColor= "#000000"
-        android:layout_weight= "1" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Friday"
-        android:id="@+id/friday"
-        android:gravity="center"
-        android:textSize="16sp"
-        android:textColor= "#000000"
-        android:layout_weight= "1" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Saturday"
-        android:id="@+id/saturday"
-        android:gravity="center"
-        android:textSize="16sp"
-        android:textColor= "#000000"
-        android:layout_weight= "1" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Sunday"
-        android:id="@+id/sunday"
-        android:gravity="center"
-        android:textSize="16sp"
-        android:textColor= "#000000"
-        android:layout_weight= "1" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Brunch"
-        android:id="@+id/brunch"
-        android:gravity="center"
-        android:textSize="16sp"
-        android:textColor= "#000000"
-        android:layout_weight= "1" />
-
-
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:text="@string/nearMe"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:drawSelectorOnTop="true"  />
 
 </LinearLayout>

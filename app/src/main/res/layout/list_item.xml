@@ -76,15 +76,7 @@
         android:layout_weight="1"
         android:src="@drawable/invite" />
 
-        <TextView
-            android:id="@+id/map_text_view"
-            android:layout_width="@dimen/list_item_height"
-            android:layout_height="0dp"
-            android:gravity="center"
-            android:layout_weight="1"
-            android:textAppearance="?android:textAppearanceButton"
-            android:textColor="@android:color/black"
-            tools:text="Map 1" />
+
 
     </LinearLayout>
 

@@ -52,4 +52,9 @@ public class Specials {
         return mImageResourceId != NO_IMAGE_PROVIDED;
     }
 
+
+
+
+
+
 }
