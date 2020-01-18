@@ -72,7 +72,7 @@ public class MondayActivity extends AppCompatActivity {
                 */
 
 
-                Intent intentsms = new Intent(Intent., Uri.parse("sms:" + "8477828215"));
+                Intent intentsms = new Intent(Intent., Uri.parse("sms:" + "8885555555"));
                 intentsms.putExtra("sms_body",
                         "Hi! Would you like to go out tonight? <Restaurant Name> has half price <specials>.");
 
