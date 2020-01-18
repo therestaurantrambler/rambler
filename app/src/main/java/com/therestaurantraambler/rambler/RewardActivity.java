@@ -16,14 +16,14 @@ public class RewardActivity extends AppCompatActivity {
         //Create the arrayList for Reward offerings info
         final ArrayList<Rewards> rewardSpecial = new ArrayList<Rewards>();
 
-        rewardSpecial.add(new Rewards(R.drawable.reward, "Restaurant 1", "Phone 1", "Detail A", "Detail B", "Detail C", "Detail D", "Detaiil E"));
-        rewardSpecial.add(new Rewards(R.drawable.reward, "Restaurant 2", "Phone 2", "Detail A", "Detail B", "Detail C", "Detail D", "Detaiil E"));
-        rewardSpecial.add(new Rewards(R.drawable.reward, "Restaurant 3", "Phone 3", "Detail A", "Detail B", "Detail C", "Detail D", "Detaiil E"));
-        rewardSpecial.add(new Rewards(R.drawable.reward, "Restaurant 4", "Phone 4", "Detail A", "Detail B", "Detail C", "Detail D", "Detaiil E"));
-        rewardSpecial.add(new Rewards(R.drawable.reward, "Restaurant 5", "Phone 5", "Detail A", "Detail B", "Detail C", "Detail D", "Detaiil E"));
-        rewardSpecial.add(new Rewards(R.drawable.reward, "Restaurant 6", "Phone 6", "Detail A", "Detail B", "Detail C", "Detail D", "Detaiil E"));
-        rewardSpecial.add(new Rewards(R.drawable.reward, "Restaurant 7", "Phone 7", "Detail A", "Detail B", "Detail C", "Detail D", "Detaiil E"));
-        rewardSpecial.add(new Rewards(R.drawable.reward, "Restaurant 8", "Phone 8", "Detail A", "Detail B", "Detail C", "Detail D", "Detaiil E"));
+        rewardSpecial.add(new Rewards(R.drawable.reward, "Restaurant 1", "Phone 1", "Detail A", "Detail B", "Detail C", "Detail D", "Detail E"));
+        rewardSpecial.add(new Rewards(R.drawable.reward, "Restaurant 2", "Phone 2", "Detail A", "Detail B", "Detail C", "Detail D", "Detail E"));
+        rewardSpecial.add(new Rewards(R.drawable.reward, "Restaurant 3", "Phone 3", "Detail A", "Detail B", "Detail C", "Detail D", "Detail E"));
+        rewardSpecial.add(new Rewards(R.drawable.reward, "Restaurant 4", "Phone 4", "Detail A", "Detail B", "Detail C", "Detail D", "Detail E"));
+        rewardSpecial.add(new Rewards(R.drawable.reward, "Restaurant 5", "Phone 5", "Detail A", "Detail B", "Detail C", "Detail D", "Detail E"));
+        rewardSpecial.add(new Rewards(R.drawable.reward, "Restaurant 6", "Phone 6", "Detail A", "Detail B", "Detail C", "Detail D", "Detail E"));
+        rewardSpecial.add(new Rewards(R.drawable.reward, "Restaurant 7", "Phone 7", "Detail A", "Detail B", "Detail C", "Detail D", "Detail E"));
+        rewardSpecial.add(new Rewards(R.drawable.reward, "Restaurant 8", "Phone 8", "Detail A", "Detail B", "Detail C", "Detail D", "Detail E"));
 
 
         /* Create a new Array Adpater whose data type is from the Rewards custom class. The adapter is named
