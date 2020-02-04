@@ -169,8 +169,7 @@ public class MainActivity extends AppCompatActivity {
 //Find the view that shows the Reward category.
 
         TextView reward = (TextView) findViewById(R.id.reward);
-
-        // Set the onClickListener to that view.
+                                                                                                                                                                                                                                                                                 // Set the onClickListener to that view.
         reward.setOnClickListener(new View.OnClickListener()
 
         {

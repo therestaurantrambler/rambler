@@ -1,12 +1,15 @@
 package com.therestaurantraambler.rambler;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -71,17 +74,63 @@ public class WednesdayActivity extends AppCompatActivity {
                 */
 
 
-                Intent intentsms = new Intent(Intent.ACTION_VIEW, Uri.parse("sms:" + "8885555555"));
-                intentsms.putExtra("sms_body",
-                        "Hi! Would you like to go out tonight? <Restaurant Name> has half price <specials>.");
 
-
-                if (intentsms.resolveActivity(getPackageManager()) != null) {
-                    startActivity(intentsms);
-                }
+                // user BoD suggests using Intent.ACTION_PICK instead of .ACTION_GET_CONTENT to avoid the chooser
+                Intent intent = new Intent(Intent.ACTION_PICK);
+                // BoD con't: CONTENT_TYPE instead of CONTENT_ITEM_TYPE
+                intent.setType(ContactsContract.CommonDataKinds.Phone.CONTENT_TYPE);
+                startActivityForResult(intent, 1);
             }
         });
+    }
+
+    /*
+    now, as soon as the user selects a contact (and probably chooses one of
+    several phone numbers), you can retrieve the data the normal way:
+     */
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (data != null) {
+            Uri uri = data.getData();
+
+            if (uri != null) {
+                Cursor c = null;
+                try {
+                    c = getContentResolver().query(uri, new String[]{
+                                    ContactsContract.CommonDataKinds.Phone.NUMBER,
+                                    ContactsContract.CommonDataKinds.Phone.TYPE },
+                            null, null, null);
+
+                    if (c != null && c.moveToFirst()) {
+                        String number = c.getString(0);
+                        int type = c.getInt(1);
+                        showSelectedNumber(type, number);
+                    }
+                } finally {
+                    if (c != null) {
+                        c.close();
+                    }
+                }
+            }
+        }
+
 
 
     }
+
+    public void showSelectedNumber(int type, String number) {
+        Toast.makeText(this, type + ": " + number, Toast.LENGTH_LONG).show();
+
+
+        Intent intentsms = new Intent(Intent.ACTION_VIEW, Uri.parse("sms:" + number));
+        intentsms.putExtra("sms_body",
+                "Hi! Would you like to go out tonight? <Restaurant Name> has half price <specials>.");
+
+
+        if (intentsms.resolveActivity(getPackageManager()) != null) {
+            startActivity(intentsms);
+        }
+    }
+
+
 }
