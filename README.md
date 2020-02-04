@@ -21,8 +21,6 @@ Future Work
 -----------
 1. The information in the list is hard coded. Create and connect a database. Inlcuding pictures of the establishments to replace the placeholder MON, TUES, ETC views.
 
-2. Fix the imporper locations of the hard coded four specials in the map activity. The lat/long coordinates are correct but google maps has a third component that may be necessary to include. i.e. lat, long, 17z.
-
-3. Have the Invite button/intent access the device's contact list and not the generic 888-555-5555 number.
+2. Map Activity: Lat/long locations are hard coded for the four locations. Determine more accurate way of gathering lat/long.
 
 5. Create the launcher icon to replace the default android icon.
