@@ -19,8 +19,10 @@ This sample uses the Gradle build system. To build this project, use the
 
 Future Work
 -----------
-1. The information in the list is hard coded. Create and connect a database.
+1. The information in the list is hard coded. Create and connect a database. Inlcuding pictures of the establishments to replace the placeholder MON, TUES, ETC views.
 
-2. The custom class Specials takes a parameter for specials. The size of this should change with the amount of specials offered at each restaurant.
+2. Fix the imporper locations of the hard coded four specials in the map activity. The lat/long coordinates are correct but google maps has a third component that may be necessary to include. i.e. lat, long, 17z.
 
-3. Create intent on the Invite button to access text messages and contacts
+3. Have the Invite button/intent access the device's contact list and not the generic 888-555-5555 number.
+
+5. Create the launcher icon to replace the default android icon.
