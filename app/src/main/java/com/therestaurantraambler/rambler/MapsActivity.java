@@ -40,25 +40,26 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap = googleMap;
 
         // Add a marker for Big Grove Tavern and move the camera
-        LatLng bigGrove = new LatLng(40.1182209, -88.245443);
+
+        LatLng bigGrove = new LatLng(40.118170, -88.243226);
         mMap.addMarker(new MarkerOptions().position(bigGrove).title("Big Grove Tavern: " +
                 "Half price wine"));
         mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(bigGrove, 14f));
 
         // Add a marker for Blind Pig Brewery and move the camera
-        LatLng blindPigBrewery = new LatLng(40.1171577, -88.2455);
+        LatLng blindPigBrewery = new LatLng(40.117177, -88.243342);
         mMap.addMarker(new MarkerOptions().position(blindPigBrewery).title("Blind Pig Brewery: "
                 + "Half price drafts"));
         mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(blindPigBrewery, 14f));
 
         // Add a marker for Punch and move the camera
-        LatLng punch = new LatLng(40.1180127, -88.2462588);
-        mMap.addMarker(new MarkerOptions().position(punch).title("Punch Bar and Grill: "
+        LatLng punch = new LatLng(40.117922, -88.243726);
+        mMap.addMarker(new MarkerOptions().position(punch).title("Punch!: "
                 + "Half price cocktails"));
         mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(punch, 14f));
 
         // Add a marker for Hamilton Walker's and move the camera
-        LatLng hamiltonWalkers = new LatLng(40.117491, -88.2460691);
+        LatLng hamiltonWalkers = new LatLng(40.117490,-88.243870);
         mMap.addMarker(new MarkerOptions().position(hamiltonWalkers).title("Hamilton Walker's: "
                 + "Half price apps"));
         mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(hamiltonWalkers, 14f));
